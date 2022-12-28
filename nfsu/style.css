@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(background.png);
+     
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: 5px;
+    text-transform: capitalize;
+
+}
+.logo1{
+    width: 10%;
+}
+.logo2{
+    width: 10%;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav .menu a{
+    width: 16.6%;
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+    
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+   
+   
+}
+nav .menu a:first-child{
+    color: #00b894;
+
+}
+main{
+    width: 100%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+.menu a:hover{
+    color: #00b894;
+}
+.menu a:first-child:hover{
+    color: aliceblue;
+    animation-duration: 5s;
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px black;
+
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: capitalize;
+    
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+    text-transform: capitalize;
+}
+ section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    transition: all .5s;
+ }
+ section .btnone{
+    background: rgb(255, 255, 255);
+ }
+ .btnone:hover{
+    background: #00b894;
+
+ }
+ .btntwo{
+    background: #00b894;
+ }
+ .btntwo:hover{
+    background: rgb(255, 255, 255);
+
+ }
+ .change_content:after{
+    content: '';
+    animation: changetext 5s infinite linear;
+    color:  #00b894;
+ }
+ @keyframes changetext {
+    0%{content: "NFSU DELHI";}
+    50%{content:"NSS"}
+
+
+    
+ }
+ div .about h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #00b894;
+    text-align: center;
+ }
